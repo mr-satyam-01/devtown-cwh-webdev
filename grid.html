@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning grids</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px;
+            gap: 10px; */
+            grid-template-areas: "nav nav nav"
+                                  "content1 space content2"
+                                  "footer footer footer";
+        }
+        .item1{
+            border: 1px solid black;
+            background: rgb(228, 150, 150);
+            grid-area: nav; 
+            height: 10vh;
+        }
+        .item2{
+            border: 1px solid black;
+            background: rgb(228, 150, 150);
+            grid-area: content1; 
+            height: 10vh;
+        }
+        .item3{
+            border: 1px solid black;
+            background: rgb(228, 150, 150);
+            grid-area: space; 
+            height: 10vh;
+        }
+        .item4{
+            border: 1px solid black;
+            background: rgb(228, 150, 150);
+            grid-area: content2; 
+            height: 10vh;
+        }
+        .item5{
+            border: 1px solid black;
+            background: rgb(228, 150, 150);
+            grid-area: footer; 
+            height: 10vh;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+</body>
+
+</html>

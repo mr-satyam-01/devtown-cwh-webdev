@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a nav bar using css variables to change color on hovering</title>
+    <style>
+        :root {
+            --backgroungcolor: black;
+            --textcolor: white;
+        }
+
+        .points {
+            background: var(--backgroungcolor);
+            color: var(--textcolor);
+            margin-top: -21px;
+            height: 60px;
+            position: sticky;
+        }
+
+        .points ul {
+            list-style-type: none;
+            display: flex;
+            font-size: 21px;
+        }
+
+        .points ul li {
+            padding: 15px;
+        }
+
+        .points ul li:hover {
+            background-color: rgb(200, 182, 182);
+        }
+
+        .login {
+            border: var(--textcolor);
+            border-radius: 5px;
+            background: var(--textcolor);
+            color: var(--backgroungcolor);
+            margin: 2px;
+            height: 18px;
+            text-align: center;
+            position: relative;
+            left: 800px;
+            top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="points">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>Edit</li>
+                <li>Help</li>
+
+                <li class="login">login</li>
+                <li class="login">Signup</li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
